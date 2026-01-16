@@ -22,7 +22,7 @@ Put the Kaggle dataset file inside `data/`:
 ## 3) Inspect columns (to choose a target)
 
 ```bash
-python -m src.inspect_columns --data data/survey.xlsx
+python3 -m src.inspect_columns --data data/survey.xlsx
 ```
 
 Pick a suitable target column (examples):
@@ -32,7 +32,9 @@ Pick a suitable target column (examples):
 ## 4) Train CatBoost + SHAP
 
 ```bash
-python -m src.train_catboost --data data/survey.xlsx --target "Uses Mobile Banking"
+python3 -u -m src.train_catboost --data data/survey.xlsx --target "Uses Mobile Banking?" --test_size 0.15 --val_size 0.05
+
+
 ```
 
 Artifacts will be saved to:
@@ -43,7 +45,7 @@ Artifacts will be saved to:
 ## 5) Run the Streamlit app
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 ### App features

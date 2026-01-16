@@ -1,4 +1,4 @@
-# app.py (UPDATED: Model Info section added + Local SHAP in new row + Age int + Beeswarm explanation)
+# app.py
 import json
 from pathlib import Path
 

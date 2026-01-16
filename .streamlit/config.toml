@@ -1,0 +1,17 @@
+[theme]
+base = "light"
+
+# Softer FinTech blue (not too bright)
+primaryColor = "#2563eb"
+
+# Off-white background (reduces glare)
+backgroundColor = "#f8fafc"
+
+# Card / section background
+secondaryBackgroundColor = "#eef2f7"
+
+# Slightly softer dark text
+textColor = "#111827"
+
+font = "sans serif"
+

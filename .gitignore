@@ -1,0 +1,19 @@
+# data & artifacts
+/data/*.csv
+/data/*.xlsx
+/data/*.xls
+/models/*
+!/models/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

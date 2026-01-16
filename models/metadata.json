@@ -1,0 +1,111 @@
+{
+  "target_col": "Uses Mobile Banking?",
+  "feature_names": [
+    "Age",
+    "Gender",
+    "Education Level",
+    "Income Level",
+    "District",
+    "Device Type",
+    "Bank Type",
+    "Trust Level (1-5)",
+    "Privacy Concern (1-5)",
+    "App Usability (1-5)",
+    "Awareness Level (1-5)"
+  ],
+  "categorical_columns": [
+    "Gender",
+    "Education Level",
+    "Income Level",
+    "District",
+    "Device Type",
+    "Bank Type"
+  ],
+  "cat_feature_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "classes": [
+    "No",
+    "Yes"
+  ],
+  "data_path_used": "data/survey.xlsx",
+  "split": {
+    "test_size": 0.15,
+    "val_size": 0.05,
+    "random_state": 42
+  },
+  "note": "Target column excluded from numeric coercion; robust split retries seeds to avoid single-class train.",
+  "categorical_options": {
+    "Gender": [
+      "Female",
+      "Male"
+    ],
+    "Education Level": [
+      "Bachelor",
+      "Diploma",
+      "High School",
+      "Master"
+    ],
+    "Income Level": [
+      "High",
+      "Low",
+      "Medium"
+    ],
+    "District": [
+      "Anuradhapura",
+      "Badulla",
+      "Colombo",
+      "Galle",
+      "Gampaha",
+      "Hambantota",
+      "Jaffna",
+      "Kandy",
+      "Kurunegala",
+      "Matara",
+      "Ratnapura",
+      "Trincomalee"
+    ],
+    "Device Type": [
+      "Feature Phone",
+      "No Phone",
+      "Smartphone"
+    ],
+    "Bank Type": [
+      "Government Bank",
+      "Private Bank",
+      "Unknown"
+    ]
+  },
+  "numeric_stats": {
+    "Age": {
+      "min": 18.0,
+      "max": 60.0,
+      "median": 30.0
+    },
+    "Trust Level (1-5)": {
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    "Privacy Concern (1-5)": {
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    "App Usability (1-5)": {
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0
+    },
+    "Awareness Level (1-5)": {
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0
+    }
+  }
+}

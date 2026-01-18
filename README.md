@@ -2,7 +2,7 @@
 
 This is a complete Python project to train a **CatBoost** model on a **tabular survey dataset**, evaluate it, and explain predictions using **SHAP**.
 
-It also includes a **Streamlit** app for a simple demo (bonus front-end integration).
+It also includes a **Streamlit** app : https://predictslmobilebankingadoption.streamlit.app/
 
 ## 1) Setup
 
